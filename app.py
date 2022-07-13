@@ -22,6 +22,7 @@ class Todo(db.Model):
 
 @app.route("/", methods=['GET', 'POST'])
 def hello_world(): 
+    print(request.method)
     if request.method == "POST":
         title = request.form['title']
         desc = request.form['desc']
