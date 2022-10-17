@@ -3,7 +3,7 @@ from flask import Flask, redirect, render_template, request, redirect
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import PrimaryKeyConstraint, desc
 from datetime import datetime
-
+#great
 app = Flask(__name__)
 
 app.config['SQLALCHEMY_DATABASE_URI']= "sqlite:///todo.db"
@@ -50,6 +50,7 @@ def delete(sno):
 
 if __name__ == "__main__":
   app.run(debug=True)
+
 
 
     
