@@ -20,9 +20,9 @@ class Todo(db.Model):
     def __reduce_ex__(self) -> str :
         return f"{self.sno} - {self.title}"
 
-@app.route("/", methods=['GET', 'POST'])
+@app.route("/", methods=['POST'])
 def hello_world(): 
-    print(request.method)
+#     print(request.method)
     if request.method == "POST":
         title = request.form['title']
         desc = request.form['desc']
