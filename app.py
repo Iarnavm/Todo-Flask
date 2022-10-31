@@ -1,3 +1,4 @@
+#imported libraries
 from crypt import methods
 from flask import Flask, redirect, render_template, request, redirect
 from flask_sqlalchemy import SQLAlchemy
